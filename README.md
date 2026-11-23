@@ -61,6 +61,8 @@ CHANGELOG.md           Dated implementation history
 
 ## Milestone 2 status
 
+Preparation artifacts: [Milestone PDF draft](docs/DRAFT_M2_PENDING_AIResumeFeedback.pdf), [two-page technical report](docs/TeamName_PENDING_TechnicalReport.pdf), [actual evaluation table](test-data/results.md), [prompt iteration log](docs/prompt-iteration-log.md), and [reel recording plan](docs/reel-recording-plan.md).
+
 **Preparation draft, not submission-ready.** See `docs/submission-checklist.md`. The draft reports the actual implemented scope; it does not invent prompt experiment results, team agreement or a reel. One final prompt and three saved design versions exist. Actual live-model iteration results and the final prompt sample run remain pending. A recording plan is provided; there is no finished reel.
 
 Team ID, team name, faculty, batch, enrollment numbers and member contributions: **to be supplied by the team**. No teammate contribution is attributed to AI-generated implementation without their review. Team members must review, understand and agree on their actual work.
