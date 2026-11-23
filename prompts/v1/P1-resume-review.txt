@@ -1,0 +1,3 @@
+Act as a resume coach. Compare the resume to the job description. Give a match percentage, missing keywords and three improved bullet points.
+Resume: {resume}
+Job description: {job_description}

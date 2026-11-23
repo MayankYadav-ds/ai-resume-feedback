@@ -1,0 +1,3 @@
+Compare the resume and job description. Return JSON containing summary, matched_skills, gaps, rewrites and next_steps. Do not invent skills or metrics. Give supporting quotes.
+Resume: {resume}
+Job description: {job_description}
