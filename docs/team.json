@@ -1,0 +1,15 @@
+{
+  "team_id": null,
+  "team_name": null,
+  "batch": null,
+  "faculty": null,
+  "members": [
+    {"name": "Mayank", "enrollment": "S24CSEU1494", "task": null, "evidence": null, "contribution_percent": null},
+    {"name": "Uday", "enrollment": "S24CSEU1515", "task": null, "evidence": null, "contribution_percent": null},
+    {"name": "Purujit", "enrollment": "S24CSEU1482", "task": null, "evidence": null, "contribution_percent": null},
+    {"name": "Akshat", "enrollment": "S24CSEU1486", "task": null, "evidence": null, "contribution_percent": null},
+    {"name": "Ansh", "enrollment": "S24CSEU1489", "task": null, "evidence": null, "contribution_percent": null}
+  ],
+  "contribution_agreement_confirmed": false,
+  "updated_on": "2026-11-24"
+}

@@ -13,7 +13,7 @@ The provided deadline was 22 November 2026 at 11:59 PM. Preparation took place o
 
 ## Required before submission
 
-- Team ID/name, batch, faculty, names, enrollments and actual contributions; all members must agree and percentages must sum to 100.
+- Team ID/name, batch, faculty, leader designation and actual contributions (the five names and enrollments are recorded in team.json); all members must agree and percentages must sum to 100.
 - A live model run for the final prompt sheet, plus before/after model outputs and observed iteration results. Optional adapter is implemented, but has only mock transport verification so far.
 - Real 90-150-second recording, accessible reel link and measured duration.
 - Replace draft metadata and filenames: `M2_TeamID_ProjectTitle.pdf` and `TeamName_TechnicalReport.pdf`. Both PDFs must stay under 10 MB.

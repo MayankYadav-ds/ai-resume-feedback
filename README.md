@@ -65,7 +65,17 @@ Preparation artifacts: [Milestone PDF draft](docs/DRAFT_M2_PENDING_AIResumeFeedb
 
 **Preparation draft, not submission-ready.** See `docs/submission-checklist.md`. The draft reports the actual implemented scope; it does not invent prompt experiment results, team agreement or a reel. One final prompt and three saved design versions exist. Actual live-model iteration results and the final prompt sample run remain pending. A recording plan is provided; there is no finished reel.
 
-Team ID, team name, faculty, batch, enrollment numbers and member contributions: **to be supplied by the team**. No teammate contribution is attributed to AI-generated implementation without their review. Team members must review, understand and agree on their actual work.
+Team members supplied on 24 November 2026:
+
+| Member | Enrollment number |
+|---|---|
+| Mayank | S24CSEU1494 |
+| Uday | S24CSEU1515 |
+| Purujit | S24CSEU1482 |
+| Akshat | S24CSEU1486 |
+| Ansh | S24CSEU1489 |
+
+Team ID, team name, faculty, batch, leader designation and actual member contributions: **to be supplied by the team**. No teammate contribution is attributed to AI-generated implementation without their review. Team members must review, understand and agree on their actual work.
 
 The supplied deadline was 22 November 2026, 11:59 PM. This implementation was prepared on 23 November. Ask faculty about acceptance; no submission has been made. No unverified recruitment statistics or external feedback from the original screenshots are presented as research evidence.
 

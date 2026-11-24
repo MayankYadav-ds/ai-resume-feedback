@@ -1,5 +1,11 @@
 # Changelog
 
+## 2026-11-24 - Team roster update
+
+- Added the five user-supplied member names and S24CSEU enrollment numbers to the project records and PDF drafts.
+- Left roles, contribution percentages, leader designation and remaining team metadata pending; no agreement is inferred.
+
+
 ## 2026-11-23 - Milestone 2 preparation (0.2.0)
 
 - Reorganized executable source into `code/`, with prompt versions, saved test data and documentation folders matching the submission brief.
