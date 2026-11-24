@@ -2,8 +2,8 @@ import http from 'node:http';
 import {readFile} from 'node:fs/promises';
 import {pathToFileURL} from 'node:url';
 import {generateReview} from './provider.js';
-const files={'/':'index.html','/app.js':'app.js','/engine.js':'engine.js','/prompts.js':'prompts.js','/validate.js':'validate.js','/style.css':'style.css'};
-const types={html:'text/html; charset=utf-8',js:'text/javascript; charset=utf-8',css:'text/css; charset=utf-8'};
+const files={'/':'index.html','/app.js':'app.js','/engine.js':'engine.js','/prompts.js':'prompts.js','/validate.js':'validate.js','/provider.js':'provider.js','/evidence.json':'evidence.json','/local-ai.bundle.js':'local-ai.bundle.js','/style.css':'style.css'};
+const types={html:'text/html; charset=utf-8',js:'text/javascript; charset=utf-8',css:'text/css; charset=utf-8',json:'application/json'};
 export function createAppServer(config={key:process.env.GEMINI_API_KEY,model:process.env.GEMINI_MODEL},fetcher=fetch) {
   let busy=false;
   return http.createServer(async(req,res)=>{
@@ -27,7 +27,7 @@ export function createAppServer(config={key:process.env.GEMINI_API_KEY,model:pro
       const file=files[path];
       if(req.method!=='GET'||!file){json(404,{error:'Not found.'});return;}
       const body=await readFile(new URL(`./public/${file}`,import.meta.url));
-      res.writeHead(200,{'Content-Type':types[file.split('.').pop()],'Cache-Control':'no-store','X-Content-Type-Options':'nosniff','Content-Security-Policy':"default-src 'self'; style-src 'self'; script-src 'self'; connect-src 'self'; base-uri 'none'; frame-ancestors 'none'"});
+      res.writeHead(200,{'Content-Type':types[file.split('.').pop()],'Cache-Control':'no-store','X-Content-Type-Options':'nosniff','Content-Security-Policy':"default-src 'self'; style-src 'self'; script-src 'self' 'wasm-unsafe-eval'; connect-src 'self' https://huggingface.co https://*.hf.co https://raw.githubusercontent.com https://generativelanguage.googleapis.com; base-uri 'none'; frame-ancestors 'none'"});
       res.end(body);
     }catch(error){json(400,{error:error.name==='TimeoutError'?'Provider timed out. Try again.':error instanceof SyntaxError?'Invalid JSON request.':error.message});}
   });

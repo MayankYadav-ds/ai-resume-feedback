@@ -1,0 +1,11 @@
+{
+  "summary": "React has direct evidence; Docker requires clarification.",
+  "matched_skills": [
+    {"skill": "JavaScript", "resume_quote": "Built a React dashboard."}
+  ],
+  "gaps": [],
+  "rewrites": [
+    {"before": "Built a React dashboard.", "after": "Built a dashboard using React.","evidence": "Built a React dashboard.","clarification_needed": null}
+  ],
+  "next_steps": ["Describe Docker experience only if it is real; otherwise plan practice."]
+}

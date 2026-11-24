@@ -1,0 +1,20 @@
+{
+  "version": "v2",
+  "input": {
+    "resume": "JavaScript, React and Git.\n- Built a React dashboard.",
+    "job": "React JavaScript Git Docker required."
+  },
+  "prompt": "Compare the resume and job description. Return JSON containing summary, matched_skills, gaps, rewrites and next_steps. Do not invent skills or metrics. Give supporting quotes.\nResume: JavaScript, React and Git.\n- Built a React dashboard.\nJob description: React JavaScript Git Docker required.",
+  "response": "{\n  \"summary\": {\n    \"assessment\": \"The resume lists three of the four required skills and provides a React project example. Docker is not evidenced.\",\n    \"supporting_quotes\": {\n      \"resume\": [\"JavaScript, React and Git.\", \"Built a React dashboard.\"],\n      \"job_description\": [\"React JavaScript Git Docker required.\"]\n    }\n  },\n  \"matched_skills\": [\n    {\"skill\": \"React\", \"supporting_quotes\": [\"JavaScript, React and Git.\", \"Built a React dashboard.\"]},\n    {\"skill\": \"JavaScript\", \"supporting_quote\": \"JavaScript, React and Git.\"},\n    {\"skill\": \"Git\", \"supporting_quote\": \"JavaScript, React and Git.\"}\n  ],\n  \"gaps\": [\n    {\"skill\": \"Docker\", \"assessment\": \"Required by the job description but not mentioned in the resume; actual proficiency is unknown.\", \"supporting_quote\": \"React JavaScript Git Docker required.\"}\n  ],\n  \"rewrites\": [\n    {\"original\": \"JavaScript, React and Git.\", \"suggested\": \"Skills: React, JavaScript, Git.\"},\n    {\"original\": \"Built a React dashboard.\", \"suggested\": \"Developed a dashboard using React.\"}\n  ],\n  \"next_steps\": [\n    \"If you have Docker experience, add a truthful example; otherwise, develop that skill.\",\n    \"Expand the dashboard bullet with verified details about its purpose, your contributions, and outcomes.\",\n    \"Add concrete examples demonstrating JavaScript and Git use, if supported by your experience.\"\n  ]\n}\n",
+  "json_valid": true,
+  "contract_valid": false,
+  "validation_issues": [
+    "summary must be non-empty text."
+  ],
+  "executed_on": "2026-11-24",
+  "tool": "Codex research assistant",
+  "model": "GPT-6 family (exact backend deployment identifier not exposed)",
+  "settings": "Inherited assistant defaults; temperature not exposed",
+  "provenance": "Independent research-agent session /root/prompt_v2; original response content retained. JSON whitespace normalized for v2.",
+  "limitations": "One T01 sample per version; not a repeated trial or Gemini benchmark. Each session has platform system/developer instructions."
+}

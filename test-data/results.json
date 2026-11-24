@@ -1,9 +1,9 @@
 {
-  "executed_at": "2026-11-23T17:32:10.972Z",
+  "executed_at": "2026-11-24T06:09:55.335Z",
   "scope": "Actual local deterministic runs. No LLM calls. T07/T08 intentionally assess semantic capability beyond dictionary coverage.",
   "total": 12,
-  "passed": 10,
-  "failed": 2,
+  "passed": 11,
+  "failed": 1,
   "results": [
     {
       "id": "T01",
@@ -27,6 +27,35 @@
         ],
         "missing": [
           "Docker"
+        ],
+        "evidence": [
+          {
+            "skill": "JavaScript",
+            "quotes": [
+              "JavaScript, React and Git."
+            ],
+            "negated": false
+          },
+          {
+            "skill": "React",
+            "quotes": [
+              "JavaScript, React and Git.",
+              "- Built a React dashboard."
+            ],
+            "negated": false
+          },
+          {
+            "skill": "Docker",
+            "quotes": [],
+            "negated": false
+          },
+          {
+            "skill": "Git",
+            "quotes": [
+              "JavaScript, React and Git."
+            ],
+            "negated": false
+          }
         ],
         "total": 4,
         "bullets": [
@@ -59,6 +88,27 @@
         ],
         "missing": [
           "Excel"
+        ],
+        "evidence": [
+          {
+            "skill": "Python",
+            "quotes": [
+              "Python and SQL analysis."
+            ],
+            "negated": false
+          },
+          {
+            "skill": "SQL",
+            "quotes": [
+              "Python and SQL analysis."
+            ],
+            "negated": false
+          },
+          {
+            "skill": "Excel",
+            "quotes": [],
+            "negated": false
+          }
         ],
         "total": 3,
         "bullets": [
@@ -94,6 +144,34 @@
         "missing": [
           "Docker"
         ],
+        "evidence": [
+          {
+            "skill": "Node",
+            "quotes": [
+              "postgres, nodejs, k8s"
+            ],
+            "negated": false
+          },
+          {
+            "skill": "PostgreSQL",
+            "quotes": [
+              "postgres, nodejs, k8s"
+            ],
+            "negated": false
+          },
+          {
+            "skill": "Docker",
+            "quotes": [],
+            "negated": false
+          },
+          {
+            "skill": "Kubernetes",
+            "quotes": [
+              "postgres, nodejs, k8s"
+            ],
+            "negated": false
+          }
+        ],
         "total": 4,
         "bullets": []
       },
@@ -120,6 +198,27 @@
         "missing": [
           "Java"
         ],
+        "evidence": [
+          {
+            "skill": "Java",
+            "quotes": [],
+            "negated": false
+          },
+          {
+            "skill": "C++",
+            "quotes": [
+              "C++ C#"
+            ],
+            "negated": false
+          },
+          {
+            "skill": "C#",
+            "quotes": [
+              "C++ C#"
+            ],
+            "negated": false
+          }
+        ],
         "total": 3,
         "bullets": []
       },
@@ -138,6 +237,7 @@
         "score": null,
         "matched": [],
         "missing": [],
+        "evidence": [],
         "total": 0,
         "bullets": []
       },
@@ -160,6 +260,15 @@
           "Python"
         ],
         "missing": [],
+        "evidence": [
+          {
+            "skill": "Python",
+            "quotes": [
+              "Maine Python project banaya"
+            ],
+            "negated": false
+          }
+        ],
         "total": 1,
         "bullets": []
       },
@@ -176,15 +285,22 @@
       },
       "limitation": "Negated skill mentions are counted as matches by the dictionary engine.",
       "actual": {
-        "score": 100,
-        "matched": [
+        "score": 0,
+        "matched": [],
+        "missing": [
           "Docker"
         ],
-        "missing": [],
+        "evidence": [
+          {
+            "skill": "Docker",
+            "quotes": [],
+            "negated": true
+          }
+        ],
         "total": 1,
         "bullets": []
       },
-      "pass": false
+      "pass": true
     },
     {
       "id": "T08",
@@ -202,6 +318,15 @@
           "Python"
         ],
         "missing": [],
+        "evidence": [
+          {
+            "skill": "Python",
+            "quotes": [
+              "Python beginner with one week of practice."
+            ],
+            "negated": false
+          }
+        ],
         "total": 1,
         "bullets": []
       },
@@ -221,6 +346,13 @@
         "matched": [],
         "missing": [
           "Python"
+        ],
+        "evidence": [
+          {
+            "skill": "Python",
+            "quotes": [],
+            "negated": false
+          }
         ],
         "total": 1,
         "bullets": []

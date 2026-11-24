@@ -1,0 +1,6 @@
+{
+  "summary": "JavaScript, React and Git.\n- Built a React dashboard.",
+  "gaps": [],
+  "rewrites": [],
+  "next_steps": ["Describe Docker experience only if it is real; otherwise plan practice."]
+}

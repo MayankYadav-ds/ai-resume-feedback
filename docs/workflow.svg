@@ -2,32 +2,33 @@
 <!DOCTYPE svg
   PUBLIC '-//W3C//DTD SVG 1.0//EN'
   'http://www.w3.org/TR/2001/REC-SVG-20010904/DTD/svg10.dtd'>
-<svg width="490" height="190" preserveAspectRatio="xMinYMin meet" viewBox="0 0 490 190" xmlns="http://www.w3.org/2000/svg" version="1.0" fill-rule="evenodd" xmlns:xlink="http://www.w3.org/1999/xlink">
+<svg width="490" height="165" preserveAspectRatio="xMinYMin meet" viewBox="0 0 490 165" xmlns="http://www.w3.org/2000/svg" version="1.0" fill-rule="evenodd" xmlns:xlink="http://www.w3.org/1999/xlink">
 	<title>...</title>
 	<desc>...</desc>
 	<clipPath id="clip">
-		<rect x="0" y="0" width="490" height="190"/>
+		<rect x="0" y="0" width="490" height="165"/>
 	</clipPath>
-	<g id="group" transform="scale(1,-1) translate(0,-190)" style="clip-path: url(#clip)">
+	<g id="group" transform="scale(1,-1) translate(0,-165)" style="clip-path: url(#clip)">
 		<g transform="">
-			<text x="0" y="173" style="font-family: BodyBold; font-size: 13px;fill: rgb(13%,45%,37%); stroke:none;" transform="translate(0,346) scale(1,-1)">Prompt workflow</text>
-			<rect x="0" y="85" width="100" height="62" rx="8" ry="8" style="stroke: rgb(13%,45%,37%); stroke-linecap: butt; stroke-width: 0.7; fill: rgb(92%,96%,94%); fill-rule: evenodd;"/>
-			<text x="9" y="127" style="font-family: Body; font-size: 9px;fill: rgb(9%,18%,26%); stroke:none;" transform="translate(0,254) scale(1,-1)">Resume + target</text>
-			<text x="9" y="115" style="font-family: Body; font-size: 9px;fill: rgb(9%,18%,26%); stroke:none;" transform="translate(0,230) scale(1,-1)">job</text>
-			<path d="M 101,116 L 124,116 Z" style="stroke: rgb(13%,45%,37%); stroke-linecap: butt; stroke-width: 1;"/>
-			<polygon points="124 116, 119 119, 119 113" style="stroke: rgb(13%,45%,37%); stroke-linecap: butt; stroke-width: 1; fill: rgb(13%,45%,37%); fill-rule: evenodd;"/>
-			<rect x="130" y="85" width="100" height="62" rx="8" ry="8" style="stroke: rgb(13%,45%,37%); stroke-linecap: butt; stroke-width: 0.7; fill: rgb(92%,96%,94%); fill-rule: evenodd;"/>
-			<text x="139" y="127" style="font-family: Body; font-size: 9px;fill: rgb(9%,18%,26%); stroke:none;" transform="translate(0,254) scale(1,-1)">Local gap review</text>
-			<path d="M 231,116 L 254,116 Z" style="stroke: rgb(13%,45%,37%); stroke-linecap: butt; stroke-width: 1;"/>
-			<polygon points="254 116, 249 119, 249 113" style="stroke: rgb(13%,45%,37%); stroke-linecap: butt; stroke-width: 1; fill: rgb(13%,45%,37%); fill-rule: evenodd;"/>
-			<rect x="260" y="85" width="100" height="62" rx="8" ry="8" style="stroke: rgb(13%,45%,37%); stroke-linecap: butt; stroke-width: 0.7; fill: rgb(92%,96%,94%); fill-rule: evenodd;"/>
-			<text x="269" y="127" style="font-family: Body; font-size: 9px;fill: rgb(9%,18%,26%); stroke:none;" transform="translate(0,254) scale(1,-1)">P1 final prompt +</text>
-			<text x="269" y="115" style="font-family: Body; font-size: 9px;fill: rgb(9%,18%,26%); stroke:none;" transform="translate(0,230) scale(1,-1)">chosen model</text>
-			<path d="M 361,116 L 384,116 Z" style="stroke: rgb(13%,45%,37%); stroke-linecap: butt; stroke-width: 1;"/>
-			<polygon points="384 116, 379 119, 379 113" style="stroke: rgb(13%,45%,37%); stroke-linecap: butt; stroke-width: 1; fill: rgb(13%,45%,37%); fill-rule: evenodd;"/>
-			<rect x="390" y="85" width="100" height="62" rx="8" ry="8" style="stroke: rgb(13%,45%,37%); stroke-linecap: butt; stroke-width: 0.7; fill: rgb(92%,96%,94%); fill-rule: evenodd;"/>
-			<text x="399" y="127" style="font-family: Body; font-size: 9px;fill: rgb(9%,18%,26%); stroke:none;" transform="translate(0,254) scale(1,-1)">Import JSON +</text>
-			<text x="399" y="115" style="font-family: Body; font-size: 9px;fill: rgb(9%,18%,26%); stroke:none;" transform="translate(0,230) scale(1,-1)">check evidence</text>
+			<text x="0" y="145" style="font-family: Helvetica-Bold; font-size: 13px;fill: rgb(27%,40%,20%); stroke:none;" transform="translate(0,290) scale(1,-1)">Prompt workflow</text>
+			<rect x="0" y="45" width="100" height="68" style="stroke: rgb(27%,40%,20%); stroke-linecap: butt; stroke-width: 0.7; fill: rgb(92%,95%,89%); fill-rule: evenodd;"/>
+			<text x="8" y="96" style="font-family: Helvetica; font-size: 9px;fill: rgb(14%,20%,14%); stroke:none;" transform="translate(0,192) scale(1,-1)">Resume + target</text>
+			<text x="8" y="83" style="font-family: Helvetica; font-size: 9px;fill: rgb(14%,20%,14%); stroke:none;" transform="translate(0,166) scale(1,-1)">job</text>
+			<path d="M 101,79 L 124,79 Z" style="stroke: rgb(27%,40%,20%); stroke-linecap: butt; stroke-width: 0.8;"/>
+			<polygon points="124 79, 119 82, 119 76" style="stroke: rgb(27%,40%,20%); stroke-linecap: butt; stroke-width: 1; fill: rgb(27%,40%,20%); fill-rule: evenodd;"/>
+			<rect x="130" y="45" width="100" height="68" style="stroke: rgb(27%,40%,20%); stroke-linecap: butt; stroke-width: 0.7; fill: rgb(92%,95%,89%); fill-rule: evenodd;"/>
+			<text x="138" y="96" style="font-family: Helvetica; font-size: 9px;fill: rgb(14%,20%,14%); stroke:none;" transform="translate(0,192) scale(1,-1)">Local input +</text>
+			<text x="138" y="83" style="font-family: Helvetica; font-size: 9px;fill: rgb(14%,20%,14%); stroke:none;" transform="translate(0,166) scale(1,-1)">coverage checks</text>
+			<path d="M 231,79 L 254,79 Z" style="stroke: rgb(27%,40%,20%); stroke-linecap: butt; stroke-width: 0.8;"/>
+			<polygon points="254 79, 249 82, 249 76" style="stroke: rgb(27%,40%,20%); stroke-linecap: butt; stroke-width: 1; fill: rgb(27%,40%,20%); fill-rule: evenodd;"/>
+			<rect x="260" y="45" width="100" height="68" style="stroke: rgb(27%,40%,20%); stroke-linecap: butt; stroke-width: 0.7; fill: rgb(92%,95%,89%); fill-rule: evenodd;"/>
+			<text x="268" y="96" style="font-family: Helvetica; font-size: 9px;fill: rgb(14%,20%,14%); stroke:none;" transform="translate(0,192) scale(1,-1)">P1 contextual</text>
+			<text x="268" y="83" style="font-family: Helvetica; font-size: 9px;fill: rgb(14%,20%,14%); stroke:none;" transform="translate(0,166) scale(1,-1)">review</text>
+			<path d="M 361,79 L 384,79 Z" style="stroke: rgb(27%,40%,20%); stroke-linecap: butt; stroke-width: 0.8;"/>
+			<polygon points="384 79, 379 82, 379 76" style="stroke: rgb(27%,40%,20%); stroke-linecap: butt; stroke-width: 1; fill: rgb(27%,40%,20%); fill-rule: evenodd;"/>
+			<rect x="390" y="45" width="100" height="68" style="stroke: rgb(27%,40%,20%); stroke-linecap: butt; stroke-width: 0.7; fill: rgb(92%,95%,89%); fill-rule: evenodd;"/>
+			<text x="398" y="96" style="font-family: Helvetica; font-size: 9px;fill: rgb(14%,20%,14%); stroke:none;" transform="translate(0,192) scale(1,-1)">Quote + numeric</text>
+			<text x="398" y="83" style="font-family: Helvetica; font-size: 9px;fill: rgb(14%,20%,14%); stroke:none;" transform="translate(0,166) scale(1,-1)">checks; export</text>
 		</g>
 	</g>
 </svg>

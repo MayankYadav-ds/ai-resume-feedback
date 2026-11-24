@@ -1,0 +1,15 @@
+{
+  "tool": "WebLLM 0.2.89",
+  "model": "SmolLM2-360M-Instruct-q4f16_1-MLC",
+  "date": "2026-11-24",
+  "settings": {
+    "temperature": 0.2,
+    "max_tokens": 1000
+  },
+  "input_id": "T01",
+  "first_response": "{\n  \"summary\": \"JavaScript, React and Git.\\n- Built a React dashboard.\",\n  \"gaps\": [],\n  \"rewrites\": [],\n  \"next_steps\": [\"Describe Docker experience only if it is real; otherwise plan practice.\"]\n}",
+  "final_response": "{\n  \"summary\": \"React has direct evidence; Docker requires clarification.\",\n  \"matched_skills\": [\n    {\"skill\": \"JavaScript\", \"resume_quote\": \"Built a React dashboard.\"}\n  ],\n  \"gaps\": [],\n  \"rewrites\": [\n    {\"before\": \"Built a React dashboard.\", \"after\": \"Built a dashboard using React.\",\"evidence\": \"Built a React dashboard.\",\"clarification_needed\": null}\n  ],\n  \"next_steps\": [\"Describe Docker experience only if it is real; otherwise plan practice.\"]\n}",
+  "first_result": "Schema failed: matched_skills missing.",
+  "final_result": "JSON and existing evidence checks pass; human review identified a weak JavaScript evidence quote that mentions only the React dashboard.",
+  "scope": "Actual local-browser WebGPU inference, no API key. Format success does not imply semantic quality."
+}

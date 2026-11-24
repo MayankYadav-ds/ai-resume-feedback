@@ -1,0 +1,14 @@
+{
+  "started_at": "2026-11-24T06:18:03.923Z",
+  "ended_at": "2026-11-24T06:20:15.830Z",
+  "duration_seconds": 132,
+  "frame_count": 206,
+  "method": "Chronological screenshots of actual browser UI at approximately 2 fps, captured through the browser screenshot API. No mock-up screens.",
+  "source_url": "http://127.0.0.1:3002/",
+  "capture_duration_seconds": 131.907,
+  "encoded_duration_seconds": 132,
+  "captioned": true,
+  "voiceover": false,
+  "file": "Promptlytics_Demo_Reel.mp4",
+  "drive_url": "https://drive.google.com/file/d/1zRkTnkG0hvn-pARYuM6G4TrsBZcFcgzH/view?usp=sharing"
+}

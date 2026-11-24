@@ -1,0 +1,11 @@
+**Match: 75%** based on required skills: React, JavaScript and Git are listed; Docker is missing.
+
+**Missing keyword:** Docker. Add it only if you have relevant experience.
+
+**Three stronger alternatives for your dashboard bullet**—choose the one that accurately reflects your work:
+
+- Built a React dashboard using JavaScript.
+- Developed a JavaScript dashboard with React and managed source code using Git.
+- Created a React dashboard, using Git to track changes throughout development.
+
+The last two assume you used Git on this project; confirm that before using them.

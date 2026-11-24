@@ -21,7 +21,8 @@ export function validateReview(value,resume,job) {
     if(typeof item?.after!=='string' || !item.after.trim()) errors.push('Rewrite must contain text.');
     if(item?.clarification_needed!==null && typeof item?.clarification_needed!=='string') errors.push('clarification_needed must be text or null.');
     for(const number of (typeof item?.after==='string'?item.after:'').match(/\d+(?:[.,]\d+)*(?:%)?/g)||[]) {
-      if(!String(item?.before||'').includes(number) && !String(item?.evidence||'').includes(number)) errors.push(`Rewrite contains unsupported number: ${number}`);
+      const sourceNumbers=(String(item?.before||'')+' '+String(item?.evidence||'')).match(/\d+(?:[.,]\d+)*(?:%)?/g)||[];
+      if(!sourceNumbers.includes(number)) errors.push(`Rewrite contains unsupported number: ${number}`);
     }
   }
   if(value.next_steps.some(x=>typeof x!=='string')) errors.push('next_steps must contain text only.');

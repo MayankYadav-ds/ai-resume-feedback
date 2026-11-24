@@ -2,33 +2,51 @@
 <!DOCTYPE svg
   PUBLIC '-//W3C//DTD SVG 1.0//EN'
   'http://www.w3.org/TR/2001/REC-SVG-20010904/DTD/svg10.dtd'>
-<svg width="490" height="190" preserveAspectRatio="xMinYMin meet" viewBox="0 0 490 190" xmlns="http://www.w3.org/2000/svg" version="1.0" fill-rule="evenodd" xmlns:xlink="http://www.w3.org/1999/xlink">
+<svg width="490" height="290" preserveAspectRatio="xMinYMin meet" viewBox="0 0 490 290" xmlns="http://www.w3.org/2000/svg" version="1.0" fill-rule="evenodd" xmlns:xlink="http://www.w3.org/1999/xlink">
 	<title>...</title>
 	<desc>...</desc>
 	<clipPath id="clip">
-		<rect x="0" y="0" width="490" height="190"/>
+		<rect x="0" y="0" width="490" height="290"/>
 	</clipPath>
-	<g id="group" transform="scale(1,-1) translate(0,-190)" style="clip-path: url(#clip)">
+	<g id="group" transform="scale(1,-1) translate(0,-290)" style="clip-path: url(#clip)">
 		<g transform="">
-			<text x="0" y="173" style="font-family: BodyBold; font-size: 13px;fill: rgb(13%,45%,37%); stroke:none;" transform="translate(0,346) scale(1,-1)">System architecture</text>
-			<rect x="0" y="85" width="100" height="62" rx="8" ry="8" style="stroke: rgb(13%,45%,37%); stroke-linecap: butt; stroke-width: 0.7; fill: rgb(92%,96%,94%); fill-rule: evenodd;"/>
-			<text x="9" y="127" style="font-family: Body; font-size: 9px;fill: rgb(9%,18%,26%); stroke:none;" transform="translate(0,254) scale(1,-1)">GitHub Pages</text>
-			<text x="9" y="115" style="font-family: Body; font-size: 9px;fill: rgb(9%,18%,26%); stroke:none;" transform="translate(0,230) scale(1,-1)">serves static UI</text>
-			<path d="M 101,116 L 124,116 Z" style="stroke: rgb(13%,45%,37%); stroke-linecap: butt; stroke-width: 1;"/>
-			<polygon points="124 116, 119 119, 119 113" style="stroke: rgb(13%,45%,37%); stroke-linecap: butt; stroke-width: 1; fill: rgb(13%,45%,37%); fill-rule: evenodd;"/>
-			<rect x="130" y="85" width="100" height="62" rx="8" ry="8" style="stroke: rgb(13%,45%,37%); stroke-linecap: butt; stroke-width: 0.7; fill: rgb(92%,96%,94%); fill-rule: evenodd;"/>
-			<text x="139" y="127" style="font-family: Body; font-size: 9px;fill: rgb(9%,18%,26%); stroke:none;" transform="translate(0,254) scale(1,-1)">Browser runs local</text>
-			<text x="139" y="115" style="font-family: Body; font-size: 9px;fill: rgb(9%,18%,26%); stroke:none;" transform="translate(0,230) scale(1,-1)">analysis</text>
-			<path d="M 231,116 L 254,116 Z" style="stroke: rgb(13%,45%,37%); stroke-linecap: butt; stroke-width: 1;"/>
-			<polygon points="254 116, 249 119, 249 113" style="stroke: rgb(13%,45%,37%); stroke-linecap: butt; stroke-width: 1; fill: rgb(13%,45%,37%); fill-rule: evenodd;"/>
-			<rect x="260" y="85" width="100" height="62" rx="8" ry="8" style="stroke: rgb(13%,45%,37%); stroke-linecap: butt; stroke-width: 0.7; fill: rgb(92%,96%,94%); fill-rule: evenodd;"/>
-			<text x="269" y="127" style="font-family: Body; font-size: 9px;fill: rgb(9%,18%,26%); stroke:none;" transform="translate(0,254) scale(1,-1)">Manual AI OR local</text>
-			<text x="269" y="115" style="font-family: Body; font-size: 9px;fill: rgb(9%,18%,26%); stroke:none;" transform="translate(0,230) scale(1,-1)">Node API</text>
-			<path d="M 361,116 L 384,116 Z" style="stroke: rgb(13%,45%,37%); stroke-linecap: butt; stroke-width: 1;"/>
-			<polygon points="384 116, 379 119, 379 113" style="stroke: rgb(13%,45%,37%); stroke-linecap: butt; stroke-width: 1; fill: rgb(13%,45%,37%); fill-rule: evenodd;"/>
-			<rect x="390" y="85" width="100" height="62" rx="8" ry="8" style="stroke: rgb(13%,45%,37%); stroke-linecap: butt; stroke-width: 0.7; fill: rgb(92%,96%,94%); fill-rule: evenodd;"/>
-			<text x="399" y="127" style="font-family: Body; font-size: 9px;fill: rgb(9%,18%,26%); stroke:none;" transform="translate(0,254) scale(1,-1)">Google Gemini</text>
-			<text x="399" y="115" style="font-family: Body; font-size: 9px;fill: rgb(9%,18%,26%); stroke:none;" transform="translate(0,230) scale(1,-1)">(optional)</text>
+			<text x="0" y="270" style="font-family: Helvetica-Bold; font-size: 13px;fill: rgb(27%,40%,20%); stroke:none;" transform="translate(0,540) scale(1,-1)">System architecture</text>
+			<rect x="0" y="175" width="100" height="62" style="stroke: rgb(27%,40%,20%); stroke-linecap: butt; stroke-width: 0.7; fill: rgb(92%,95%,89%); fill-rule: evenodd;"/>
+			<text x="8" y="220" style="font-family: Helvetica; font-size: 9px;fill: rgb(14%,20%,14%); stroke:none;" transform="translate(0,440) scale(1,-1)">GitHub Pages</text>
+			<text x="8" y="207" style="font-family: Helvetica; font-size: 9px;fill: rgb(14%,20%,14%); stroke:none;" transform="translate(0,414) scale(1,-1)">Static assets</text>
+			<rect x="130" y="175" width="100" height="62" style="stroke: rgb(27%,40%,20%); stroke-linecap: butt; stroke-width: 0.7; fill: rgb(92%,95%,89%); fill-rule: evenodd;"/>
+			<text x="138" y="220" style="font-family: Helvetica; font-size: 9px;fill: rgb(14%,20%,14%); stroke:none;" transform="translate(0,440) scale(1,-1)">Browser UI</text>
+			<text x="138" y="207" style="font-family: Helvetica; font-size: 9px;fill: rgb(14%,20%,14%); stroke:none;" transform="translate(0,414) scale(1,-1)">No source storage</text>
+			<rect x="260" y="175" width="100" height="62" style="stroke: rgb(27%,40%,20%); stroke-linecap: butt; stroke-width: 0.7; fill: rgb(92%,95%,89%); fill-rule: evenodd;"/>
+			<text x="268" y="220" style="font-family: Helvetica; font-size: 9px;fill: rgb(14%,20%,14%); stroke:none;" transform="translate(0,440) scale(1,-1)">Local analysis</text>
+			<text x="268" y="207" style="font-family: Helvetica; font-size: 9px;fill: rgb(14%,20%,14%); stroke:none;" transform="translate(0,414) scale(1,-1)">JavaScript</text>
+			<rect x="390" y="175" width="100" height="62" style="stroke: rgb(27%,40%,20%); stroke-linecap: butt; stroke-width: 0.7; fill: rgb(92%,95%,89%); fill-rule: evenodd;"/>
+			<text x="398" y="220" style="font-family: Helvetica; font-size: 9px;fill: rgb(14%,20%,14%); stroke:none;" transform="translate(0,440) scale(1,-1)">Coverage report</text>
+			<text x="398" y="207" style="font-family: Helvetica; font-size: 9px;fill: rgb(14%,20%,14%); stroke:none;" transform="translate(0,414) scale(1,-1)">JSON export</text>
+			<path d="M 101,206 L 124,206 Z" style="stroke: rgb(27%,40%,20%); stroke-linecap: butt; stroke-width: 0.8;"/>
+			<polygon points="124 206, 119 209, 119 203" style="stroke: rgb(27%,40%,20%); stroke-linecap: butt; stroke-width: 1; fill: rgb(27%,40%,20%); fill-rule: evenodd;"/>
+			<path d="M 231,206 L 254,206 Z" style="stroke: rgb(27%,40%,20%); stroke-linecap: butt; stroke-width: 0.8;"/>
+			<polygon points="254 206, 249 209, 249 203" style="stroke: rgb(27%,40%,20%); stroke-linecap: butt; stroke-width: 1; fill: rgb(27%,40%,20%); fill-rule: evenodd;"/>
+			<path d="M 361,206 L 384,206 Z" style="stroke: rgb(27%,40%,20%); stroke-linecap: butt; stroke-width: 0.8;"/>
+			<polygon points="384 206, 379 209, 379 203" style="stroke: rgb(27%,40%,20%); stroke-linecap: butt; stroke-width: 1; fill: rgb(27%,40%,20%); fill-rule: evenodd;"/>
+			<rect x="130" y="65" width="100" height="70" style="stroke: rgb(27%,40%,20%); stroke-linecap: butt; stroke-width: 0.7; fill: rgb(92%,95%,89%); fill-rule: evenodd;"/>
+			<text x="138" y="118" style="font-family: Helvetica; font-size: 9px;fill: rgb(14%,20%,14%); stroke:none;" transform="translate(0,236) scale(1,-1)">P1 prompt</text>
+			<text x="138" y="105" style="font-family: Helvetica; font-size: 9px;fill: rgb(14%,20%,14%); stroke:none;" transform="translate(0,210) scale(1,-1)">Source pair</text>
+			<rect x="260" y="55" width="100" height="90" style="stroke: rgb(27%,40%,20%); stroke-linecap: butt; stroke-width: 0.7; fill: rgb(92%,95%,89%); fill-rule: evenodd;"/>
+			<text x="268" y="128" style="font-family: Helvetica; font-size: 9px;fill: rgb(14%,20%,14%); stroke:none;" transform="translate(0,256) scale(1,-1)">Manual Codex OR</text>
+			<text x="268" y="115" style="font-family: Helvetica; font-size: 9px;fill: rgb(14%,20%,14%); stroke:none;" transform="translate(0,230) scale(1,-1)">SmolLM2 on device</text>
+			<text x="268" y="102" style="font-family: Helvetica; font-size: 9px;fill: rgb(14%,20%,14%); stroke:none;" transform="translate(0,204) scale(1,-1)">OR own-key Gemini</text>
+			<rect x="390" y="65" width="100" height="70" style="stroke: rgb(27%,40%,20%); stroke-linecap: butt; stroke-width: 0.7; fill: rgb(92%,95%,89%); fill-rule: evenodd;"/>
+			<text x="398" y="118" style="font-family: Helvetica; font-size: 9px;fill: rgb(14%,20%,14%); stroke:none;" transform="translate(0,236) scale(1,-1)">Evidence checks</text>
+			<text x="398" y="105" style="font-family: Helvetica; font-size: 9px;fill: rgb(14%,20%,14%); stroke:none;" transform="translate(0,210) scale(1,-1)">Human review</text>
+			<text x="398" y="92" style="font-family: Helvetica; font-size: 9px;fill: rgb(14%,20%,14%); stroke:none;" transform="translate(0,184) scale(1,-1)">JSON export</text>
+			<path d="M 180,175 L 180,140 Z" style="stroke: rgb(27%,40%,20%); stroke-linecap: butt; stroke-width: 0.8;"/>
+			<polygon points="180 140, 177 145, 183 145" style="stroke: rgb(27%,40%,20%); stroke-linecap: butt; stroke-width: 1; fill: rgb(27%,40%,20%); fill-rule: evenodd;"/>
+			<path d="M 231,100 L 254,100 Z" style="stroke: rgb(27%,40%,20%); stroke-linecap: butt; stroke-width: 0.8;"/>
+			<polygon points="254 100, 249 103, 249 97" style="stroke: rgb(27%,40%,20%); stroke-linecap: butt; stroke-width: 1; fill: rgb(27%,40%,20%); fill-rule: evenodd;"/>
+			<path d="M 361,100 L 384,100 Z" style="stroke: rgb(27%,40%,20%); stroke-linecap: butt; stroke-width: 0.8;"/>
+			<polygon points="384 100, 379 103, 379 97" style="stroke: rgb(27%,40%,20%); stroke-linecap: butt; stroke-width: 1; fill: rgb(27%,40%,20%); fill-rule: evenodd;"/>
+			<text x="0" y="17" style="font-family: Helvetica; font-size: 9px;fill: rgb(14%,20%,14%); stroke:none;" transform="translate(0,34) scale(1,-1)">Optional Node loopback adapter keeps a Gemini key server-side.</text>
 		</g>
 	</g>
 </svg>

@@ -1,0 +1,26 @@
+{
+  "summary": {
+    "assessment": "The resume lists three of the four required skills and provides a React project example. Docker is not evidenced.",
+    "supporting_quotes": {
+      "resume": ["JavaScript, React and Git.", "Built a React dashboard."],
+      "job_description": ["React JavaScript Git Docker required."]
+    }
+  },
+  "matched_skills": [
+    {"skill": "React", "supporting_quotes": ["JavaScript, React and Git.", "Built a React dashboard."]},
+    {"skill": "JavaScript", "supporting_quote": "JavaScript, React and Git."},
+    {"skill": "Git", "supporting_quote": "JavaScript, React and Git."}
+  ],
+  "gaps": [
+    {"skill": "Docker", "assessment": "Required by the job description but not mentioned in the resume; actual proficiency is unknown.", "supporting_quote": "React JavaScript Git Docker required."}
+  ],
+  "rewrites": [
+    {"original": "JavaScript, React and Git.", "suggested": "Skills: React, JavaScript, Git."},
+    {"original": "Built a React dashboard.", "suggested": "Developed a dashboard using React."}
+  ],
+  "next_steps": [
+    "If you have Docker experience, add a truthful example; otherwise, develop that skill.",
+    "Expand the dashboard bullet with verified details about its purpose, your contributions, and outcomes.",
+    "Add concrete examples demonstrating JavaScript and Git use, if supported by your experience."
+  ]
+}

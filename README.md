@@ -1,84 +1,87 @@
-# Resume Studio
+# Resume Studio · Promptlytics
 
-AI-Powered Resume Feedback & Gap Analysis for placement preparation.
+**[Open the public website](https://mayankyadav-ds.github.io/ai-resume-feedback/)** · **[Watch the 132-second reel](https://drive.google.com/file/d/1zRkTnkG0hvn-pARYuM6G4TrsBZcFcgzH/view)**
 
-**[Open public prototype](https://mayankyadav-ds.github.io/ai-resume-feedback/)** · [Source repository](https://github.com/MayankYadav-ds/ai-resume-feedback)
+AI-Powered Resume Feedback & Gap Analysis for placement preparation. Team PE-B49-20, Batch 56. Faculty: Ankit Vijay Bansal. Leader: Akshat Garag.
 
-## Run locally
+## Use the website
 
-Node.js 20+; no npm dependencies. Run `npm start`, then open http://127.0.0.1:3000.
+The public GitHub Pages site runs independently of the developer's computer. No account or key is needed for local analysis, prompt export, manual evidence checking, recorded examples or the evidence dashboard.
 
-- `npm test`: regression tests for analysis, validation, adapter error handling and local API access.
-- `npm run evaluate`: regenerate the twelve-input local capability evaluation.
-- `node code/run-prompt-experiments.js`: run v1/v2/v3 on fictional T01 with a configured provider. Requires a key and may use paid quota.
+1. Paste a resume and target role, or upload a plain-text .txt/.md resume.
+2. Analyze recognized skills, common explicit negation, source evidence and gaps.
+3. Open Prompt lab to copy/download one of three prompt versions (v3 is final).
+4. Generate a private review with the optional on-device SmolLM2 model, use your own Gemini key, or import a response from a chosen assistant.
+5. Check evidence and export the reviewed result.
 
-## What works
+**On-device AI:** requires a WebGPU-capable desktop browser and a first-use model download of hundreds of MB. Model files may be cached; resume text stays on the device. The small model can produce incomplete or semantically weak feedback. The actual first draft failed structure validation; a subsequent structured run passed the contract but used a weak JavaScript evidence quote. This is recorded honestly in test-data/model-runs/on-device-T01.json.
 
-1. Paste a plain-text resume and job description (30,000 characters each).
-2. Review dictionary-based keyword coverage, matched skills and gaps.
-3. Select and download one of three prompt versions (v3 is final).
-4. Use your selected AI assistant manually, then paste its JSON response.
-5. Check schema, exact source quotes and unsupported numbers before exporting.
+**Gemini:** optional, using a key held only in the current tab or a loopback server environment key. Requests use the visitor's provider quota/billing and require data-sharing consent. No service key is committed. No live Gemini run is claimed.
 
-The public prototype is static. It makes no model/API calls and needs no account. An optional local Gemini adapter is included; live provider testing is pending configuration. Model transport tests use mocks and are labeled accordingly. Manual imports are not evidence of a particular model being run.
+## Run and verify locally
 
-## Optional local Gemini integration
+Node.js 20+. Prebuilt browser assets are committed, so `npm start` and `npm test` need no dependency installation. Open http://127.0.0.1:3000.
 
-In PowerShell, set `GEMINI_API_KEY` and `GEMINI_MODEL` in your shell, then run `npm start`. Use an enabled model identifier from your provider account. The server does not automatically load `.env` files. Never place a key in browser code, GitHub Pages, a public config file or a commit.
+```sh
+npm test
+npm run evaluate
+npm run evidence
+```
 
-The button becomes available only when the local server has both settings and you check the data-sharing consent box. Click **Run local Gemini review** to send the texts to Google. Credentials are used in a server-side request header. No input/output is saved automatically. The experimental adapter uses the documented [generateContent endpoint](https://aistudio.google.com/api-reference/generate-content); compatibility with a selected model, quota and JSON adherence require a real test. Provider errors are shown explicitly.
+To rebuild the optional on-device bundle, run `npm ci` then `npm run build`. To regenerate PDF documents, install Python reportlab and pymupdf, then run `python code/build-diagrams.py` and `python code/build-docs.py`.
 
-## Evidence and limitations
+For an optional server-side Gemini key, set `GEMINI_API_KEY` and `GEMINI_MODEL` in the shell before starting the server. `.env` files are not automatically loaded. `node code/run-prompt-experiments.js` can run fictional T01 on Gemini; it may use paid quota. Its outputs must not overwrite the saved Codex experiment without preserving provenance.
 
-The score is the percentage of recognized job-skill dictionary entries also found in the resume, with equal weights. It is **not** an ATS pass rate, hiring prediction or suitability assessment. Unknown vocabulary gives N/A. Negation, proficiency, years of experience and requirement importance are not modeled.
+## Actual evidence
 
-The twelve-input evaluation records **10 passes and 2 semantic capability failures** (negated skills and experience depth). These expected capability failures are separate from the **14 passing regression tests**. Results and full inputs are in `test-data/`. Testing the current dictionary behavior does not prove semantic correctness.
+- 1 final prompt, 3 deliberately saved versions; complete text and rendered input pair saved.
+- 3 actual independent Codex research-agent responses for the same fictional T01 pair: v1 free text, v2 JSON with incompatible field shapes, v3 final-contract valid.
+- Tool described by the runtime as a GPT-6 family assistant. Exact backend deployment identifier and temperature were not exposed. One run per version is a limited comparison, not a performance benchmark.
+- 12 actual local capability inputs: **11 pass and 1 known semantic limitation**. Categories: 4 Normal, 5 Edge, 3 Invalid.
+- **17 passing regression tests**, including mock provider transport tests clearly separated from real model runs.
+- A captioned **132-second actual browser recording**, captured chronologically at about 2 fps. No mock-up screens or slides replace the working demo.
 
-AI-output checks validate structure, exact quotes and numeric overlap. They do not prove semantic entailment or catch invented nonnumeric claims. Prompt injection mitigations are not a guarantee. Review all suggestions yourself. Conservative local wording edits do not fabricate achievements. PDF/DOCX parsing is not implemented.
+The keyword score is equal-weight dictionary coverage, **not** an ATS pass rate, hiring prediction or candidate suitability assessment. T08 preserves the failure to assess required experience depth. Quote and numeric-token checks cannot prove semantic truth. Review every suggestion before using it. PDF/DOCX parsing is not in the delivered scope.
+
+## Milestone 2 artifacts
+
+- [Seven-section milestone report](docs/M2_PE-B49-20_AIResumeFeedback.pdf)
+- [Two-page technical supporting report](docs/Promptlytics_TechnicalReport.pdf)
+- [Actual test table](test-data/results.md)
+- [Prompt iteration log](docs/prompt-iteration-log.md)
+- [Submission checklist and form values](docs/submission-checklist.md)
+- [Captioned demo video](docs/Promptlytics_Demo_Reel.mp4)
+
+The supporting report is reproduced in Section 6 of the milestone report. The deck is saved as a native presentation in the project's Codex chat and can be exported as PowerPoint from its viewer.
+
+## Team and ownership
+
+| Member | Enrollment | Assigned ownership |
+|---|---|---|
+| Mayank | S24CSEU1494 | Integration and deployment · 20% |
+| Uday | S24CSEU1515 | Analysis and evaluation · 20% |
+| Purujit | S24CSEU1482 | Prompt design and experiments · 20% |
+| Akshat Garag | S24CSEU1486 | Coordination and UI · 20% |
+| Ansh | S24CSEU1489 | Quality checks and documentation · 20% |
+
+The project owner requested this equal allocation. Implementation is AI-assisted. These are assigned responsibilities over delivered artifacts, not independent verification of what each teammate personally completed. All members must review and agree before the form's contribution confirmation is ticked. No form submission or approval by all members is claimed. The supplied deadline was 22 November 2026; acceptance of later work is for faculty to determine.
 
 ## Privacy
 
-Local analysis and manual JSON validation execute in the browser tab. No analytics, application storage or saved history is used. Public demo inputs are not uploaded. Clear all or reload resets application state; browser restoration, extensions and downloaded exports remain outside the app's control.
+No analytics or application storage for source texts, keys or reviews is used. Clear/reload resets application state; browser form restoration and extensions remain outside the app's control. On-device model files may be cached. Downloaded prompts/reports include supplied content. Direct Gemini requests send the texts and user key to Google only after consent. Real resumes and keys must not be committed. The local server binds to loopback and checks request origin/consent.
 
-Downloading a prompt or report creates a local file containing supplied text. Sharing a prompt manually, or consenting to a local Gemini call, sends the text to the chosen provider. Remove personal details first and check that provider's privacy terms. The optional server binds to loopback; it is not designed for public server deployment. Do not commit real resumes, credentials or provider exports containing private information.
-
-## Repository structure
+## Structure
 
 ```text
-prompts/v1/, v2/, v3/   Full historical design versions
-prompts/final/          One final prompt (P1)
-code/public/           Responsive browser application and validation
-code/server.js         Local static server and optional consent-gated API
-code/provider.js       Optional Gemini adapter
-code/tests/            Regression tests (mock provider transport)
-code/evaluate.js       Reproducible local capability evaluation
-code/run-prompt-experiments.js  Actual model experiment runner
-code/build-docs.py     PDF/diagram generation (Python reportlab + pymupdf)
-test-data/             Fictional inputs and actual saved local results
-docs/                  Diagrams, screenshots, PDF drafts and readiness notes
-CHANGELOG.md           Dated implementation history
+code/public/           Website, provider adapter, evidence manifest and lazy AI bundle
+code/tests/            Regression tests
+code/evaluate.js       Reproducible capability evaluation
+code/prepare-evidence.js   Saved experiment validation and public manifest
+code/build-docs.py     Report generation from actual evidence
+prompts/v1/,v2/,v3/,final/  Full prompt texts
+test-data/             Fictional inputs, actual outputs and model-run provenance
+docs/                  Reports, diagrams, screenshots, demo and project records
+CHANGELOG.md           Dated history
 ```
 
-## Milestone 2 status
-
-Preparation artifacts: [Milestone PDF draft](docs/DRAFT_M2_PENDING_AIResumeFeedback.pdf), [two-page technical report](docs/TeamName_PENDING_TechnicalReport.pdf), [actual evaluation table](test-data/results.md), [prompt iteration log](docs/prompt-iteration-log.md), and [reel recording plan](docs/reel-recording-plan.md).
-
-**Preparation draft, not submission-ready.** See `docs/submission-checklist.md`. The draft reports the actual implemented scope; it does not invent prompt experiment results, team agreement or a reel. One final prompt and three saved design versions exist. Actual live-model iteration results and the final prompt sample run remain pending. A recording plan is provided; there is no finished reel.
-
-Team members supplied on 24 November 2026:
-
-| Member | Enrollment number |
-|---|---|
-| Mayank | S24CSEU1494 |
-| Uday | S24CSEU1515 |
-| Purujit | S24CSEU1482 |
-| Akshat | S24CSEU1486 |
-| Ansh | S24CSEU1489 |
-
-Team ID, team name, faculty, batch, leader designation and actual member contributions: **to be supplied by the team**. No teammate contribution is attributed to AI-generated implementation without their review. Team members must review, understand and agree on their actual work.
-
-The supplied deadline was 22 November 2026, 11:59 PM. This implementation was prepared on 23 November. Ask faculty about acceptance; no submission has been made. No unverified recruitment statistics or external feedback from the original screenshots are presented as research evidence.
-
-## License
-
-MIT. See LICENSE.
+MIT license. Optional runtime references: [WebLLM](https://webllm.mlc.ai/docs/) and [Gemini generateContent](https://aistudio.google.com/api-reference/generate-content).

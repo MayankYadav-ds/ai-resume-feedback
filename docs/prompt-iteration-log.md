@@ -1,13 +1,11 @@
-# P1 prompt iteration log
+# Actual P1 iteration log
 
-All three versions were deliberately authored and saved on 23 November 2026. These are design iterations, not completed model-quality experiments.
+Date: 24 November 2026. Same fictional T01 resume/job pair, three independent Codex research-agent sessions. Platform instructions and inherited defaults apply; exact model deployment identifier and temperature were not exposed. Full rendered prompts and original response content are saved in test-data/model-runs/. JSON whitespace was normalized for v2 without changing its content.
 
-| Version | Change | Why | Observed result / evidence |
+| Version | What changed | Why | Actual observed result |
 |---|---|---|---|
-| v1 | Role, comparison, score and three bullet request | Preserve initial project approach | Saved full text; 0 examples; requests a potentially misleading match percentage. No live model run. |
-| v2 | JSON fields, no invented skills/metrics, supporting quotes | Make output consumable and reduce unsupported additions | Saved full text; 0 examples; quote-field schema remains underspecified. No live model run. |
-| v3 / final | Exact JSON shape, evidence quotes, source-data separation, one example, no ATS prediction | Make evidence checkable and keep source instructions separate | Saved full text; 1 example. Fourteen regression tests pass, including validator and mocked adapter tests. This is software validation, not model performance evidence. No live model run. |
+| v1 | Role, score and three rewrites | Original baseline | Free text, not JSON. Three alternatives and an unverified Git-on-project assumption, explicitly caveated by the model. Final app contract fails. |
+| v2 | JSON fields, quotes, no invented metrics | Make output consumable | JSON parses; summary is an object and quote/rewrite fields use different names. Final app contract fails. |
+| v3 / final | Exact contract, source separation, one example | Make evidence checkable | JSON parses and final contract passes. Three skill matches, one gap and one factual rewrite. Six required quotes locate exactly in the source. |
 
-Full text is in `prompts/v1`, `prompts/v2`, `prompts/v3` and `prompts/final`. Final prompt count = 1; saved design versions = 3. No empirical claim that v3 outperforms v1 is made.
-
-To collect actual before/after outputs, configure a Gemini key and enabled model in the shell, then run `node code/run-prompt-experiments.js`. It sends the fictional T01 input three times and saves outputs or errors with timestamps. Inspect each result, update this table with actual observations, and use the same model/settings for all versions. Do not treat mocked provider responses or the manual UI validation fixture as model outputs.
+Only one sample was run per version. These observations do not establish statistical improvement, ATS acceptance or hiring success. The separate live on-device test is recorded under on-device-T01.json; it is not passed off as a Codex or Gemini result.

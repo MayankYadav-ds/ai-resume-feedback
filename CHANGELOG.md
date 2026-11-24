@@ -1,5 +1,16 @@
 # Changelog
 
+## 2026-11-24 - Complete prototype and project evidence (1.0.0)
+
+- Redesigned the responsive workspace with analysis, prompt lab, evidence and team views.
+- Added plain-text upload, source evidence, common explicit negation handling and exact numeric-token checks.
+- Recorded actual independent Codex v1/v2/v3 responses, plus a live key-free WebGPU/SmolLM2 test with failures and semantic limitations preserved.
+- Added an optional own-key Gemini path without committing a service key.
+- Recorded and publicly shared a real 132-second captioned demo on Drive.
+- Completed named seven-section and supporting reports and an editable ten-slide presentation.
+- Recorded supplied team identity and proposed equal ownership; did not invent all-member agreement.
+
+
 ## 2026-11-24 - Team roster update
 
 - Added the five user-supplied member names and S24CSEU enrollment numbers to the project records and PDF drafts.

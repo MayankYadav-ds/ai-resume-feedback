@@ -1,10 +1,24 @@
 {
   "name": "ai-resume-feedback",
-  "version": "0.2.0",
+  "version": "1.0.0",
   "private": true,
   "description": "Privacy-first resume gap analysis and evidence-grounded AI prompt builder",
   "type": "module",
-  "scripts": {"start": "node code/server.js", "test": "node --test", "evaluate": "node code/evaluate.js"},
-  "engines": {"node": ">=20"},
-  "license": "MIT"
+  "scripts": {
+    "start": "node code/server.js",
+    "test": "node --test",
+    "evaluate": "node code/evaluate.js",
+    "build": "esbuild code/local-ai.entry.js --bundle --format=esm --minify --outfile=code/public/local-ai.bundle.js",
+    "evidence": "node code/prepare-evidence.js"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "@mlc-ai/web-llm": "0.2.89"
+  },
+  "devDependencies": {
+    "esbuild": "0.28.2"
+  }
 }

@@ -1,15 +1,48 @@
 {
-  "team_id": null,
-  "team_name": null,
-  "batch": null,
-  "faculty": null,
+  "team_id": "PE-B49-20",
+  "team_name": "Promptlytics",
+  "batch": "56",
+  "faculty": "Ankit Vijay Bansal",
   "members": [
-    {"name": "Mayank", "enrollment": "S24CSEU1494", "task": null, "evidence": null, "contribution_percent": null},
-    {"name": "Uday", "enrollment": "S24CSEU1515", "task": null, "evidence": null, "contribution_percent": null},
-    {"name": "Purujit", "enrollment": "S24CSEU1482", "task": null, "evidence": null, "contribution_percent": null},
-    {"name": "Akshat", "enrollment": "S24CSEU1486", "task": null, "evidence": null, "contribution_percent": null},
-    {"name": "Ansh", "enrollment": "S24CSEU1489", "task": null, "evidence": null, "contribution_percent": null}
+    {
+      "name": "Mayank",
+      "enrollment": "S24CSEU1494",
+      "task": "Project integration and deployment",
+      "evidence": "code/server.js; .github/workflows/pages.yml",
+      "contribution_percent": 20
+    },
+    {
+      "name": "Uday",
+      "enrollment": "S24CSEU1515",
+      "task": "Analysis engine and evaluation",
+      "evidence": "code/public/engine.js; test-data/results.json",
+      "contribution_percent": 20
+    },
+    {
+      "name": "Purujit",
+      "enrollment": "S24CSEU1482",
+      "task": "Prompt design and experiments",
+      "evidence": "prompts/final/P1-resume-review.txt; test-data/model-runs/",
+      "contribution_percent": 20
+    },
+    {
+      "name": "Akshat Garag",
+      "enrollment": "S24CSEU1486",
+      "task": "Team coordination and UI",
+      "evidence": "code/public/index.html; code/public/style.css",
+      "contribution_percent": 20
+    },
+    {
+      "name": "Ansh",
+      "enrollment": "S24CSEU1489",
+      "task": "Quality checks and documentation",
+      "evidence": "code/tests/; code/build-docs.py",
+      "contribution_percent": 20
+    }
   ],
   "contribution_agreement_confirmed": false,
-  "updated_on": "2026-11-24"
+  "updated_on": "2026-11-24",
+  "leader": "Akshat Garag",
+  "allocation_note": "Proposed equal ownership allocation authorized by the project owner; implementation produced with AI assistance. These are assigned responsibilities, not independently verified claims of each member\u2019s completed work. All-member agreement has not been recorded.",
+  "reel_url": "https://drive.google.com/file/d/1zRkTnkG0hvn-pARYuM6G4TrsBZcFcgzH/view?usp=sharing"
 }

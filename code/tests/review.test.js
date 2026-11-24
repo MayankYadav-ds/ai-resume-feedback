@@ -7,6 +7,7 @@ const resume='Built a React dashboard.';
 const job='React and Docker required.';
 const review={summary:'React evidenced, Docker needs clarification.',matched_skills:[{skill:'React',resume_quote:resume}],gaps:[{skill:'Docker',job_quote:job}],rewrites:[{before:resume,after:'Built a dashboard using React.',evidence:resume,clarification_needed:null}],next_steps:['Verify Docker experience.']};
 test('accepts structured feedback with exact evidence',()=>assert.deepEqual(validateReview(review,resume,job),[]));
+test('a number embedded in a larger source number is not evidence',()=>{const source='Built 125 dashboards.';const value={...review,matched_skills:[],gaps:[],rewrites:[{before:source,after:'Built 25 dashboards.',evidence:source,clarification_needed:null}]};assert.ok(validateReview(value,source,job).some(e=>e.includes('25')));});
 test('rejects invented source quotes and unsupported metrics',()=>{const value=structuredClone(review);value.rewrites[0].after+=' Improved speed by 25%.';value.matched_skills[0].resume_quote='Built Docker';const errors=validateReview(value,resume,job);assert.equal(errors.length,2);});
 test('rejects malformed structures without throwing',()=>{for(const value of [null,[],{},42,{...review,rewrites:[null]}])assert.ok(validateReview(value,resume,job).length);});
 test('provider adapter passes credentials in header and validates response (mock transport)',async()=>{

@@ -1,0 +1,9 @@
+{
+  "checked_on": "2026-11-24",
+  "authenticated": false,
+  "http_status": 200,
+  "content_type": "video/mp4",
+  "sha256_matches_local_video": true,
+  "sharing_observed": "Anyone with the link, Viewer; No sign-in required",
+  "player_duration_observed": "2:12"
+}

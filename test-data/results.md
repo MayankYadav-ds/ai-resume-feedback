@@ -10,7 +10,7 @@ T07 and T08 are known semantic limitations, intentionally retained as failed cap
 | T04 | Normal | {"score":67,"matched":["C++","C#"]} | {"score":67,"matched":["C++","C#"]} | Pass |
 | T05 | Edge | {"score":null,"matched":[]} | {"score":null,"matched":[]} | Pass |
 | T06 | Edge | {"score":100,"matched":["Python"]} | {"score":100,"matched":["Python"]} | Pass |
-| T07 | Edge | {"score":0,"matched":[]} | {"score":100,"matched":["Docker"]} | Fail |
+| T07 | Edge | {"score":0,"matched":[]} | {"score":0,"matched":[]} | Pass |
 | T08 | Edge | {"score":0,"matched":[]} | {"score":100,"matched":["Python"]} | Fail |
 | T09 | Edge | {"score":0,"matched":[]} | {"score":0,"matched":[]} | Pass |
 | T10 | Invalid | {"error":"Add both your resume and the job description."} | {"error":"Add both your resume and the job description."} | Pass |
