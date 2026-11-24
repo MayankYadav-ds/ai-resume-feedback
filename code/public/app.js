@@ -70,7 +70,7 @@ function renderLocal(value) {
   $('score').textContent=value.score===null?'N/A':`${value.score}%`;
   $('coverage-bar').value=value.score??0;
   $('coverage').textContent=`${value.matched.length} of ${value.total} recognized job skills found`;
-  $('matched-count').textContent=`${value.matched.length} matching skills`;$('gap-count').textContent=`${value.missing.length} gaps to review`;
+  $('matched-count').textContent=`${value.matched.length} matching skill${value.matched.length===1?'':'s'}`;$('gap-count').textContent=`${value.missing.length} gap${value.missing.length===1?'':'s'} to review`;
   chips('matched',value.matched,'No recognized matches');chips('missing',value.missing,value.total?'No gaps in recognized keywords':'No supported keywords found');
   $('source-evidence').replaceChildren();
   for(const item of value.evidence) {

@@ -1,5 +1,5 @@
 {
-  "executed_at": "2026-11-24T06:09:55.335Z",
+  "executed_at": "2026-11-24T11:07:22.490Z",
   "scope": "Actual local deterministic runs. No LLM calls. T07/T08 intentionally assess semantic capability beyond dictionary coverage.",
   "total": 12,
   "passed": 11,
@@ -283,7 +283,7 @@
         "score": 0,
         "matched": []
       },
-      "limitation": "Negated skill mentions are counted as matches by the dictionary engine.",
+      "limitation": "Regression case: common explicit negation is excluded; complex negation remains outside the dictionary method.",
       "actual": {
         "score": 0,
         "matched": [],
